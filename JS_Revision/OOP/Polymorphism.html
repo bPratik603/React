@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // poly means many and morphism means transforming one form into another form.
+
+        function demo(){
+            console.log('hey');
+        }
+
+        demo();
+        function demo(){
+            console.log("hii");
+        }
+
+        demo();
+
+        class firstClass{
+            demo(){
+                console.log("inside fristclass");
+            }
+        }
+
+        class secondClass extends firstClass{
+            demo(){
+                console.log("Insdie secondClass");
+            }
+        }
+
+        class thiredClass extends secondClass{
+            demo(){
+                console.log("Inside thiredClass");
+            }
+        }
+
+        let obj1 = new firstClass();
+        obj1.demo();
+
+        let obj2 = new secondClass();
+        obj2.demo();
+
+        let obj3 = new thiredClass();
+        obj3.demo();
+
+
+        
+
+    </script>
+</body>
+</html>
